@@ -1,4 +1,4 @@
-package test;
+
 
 import java.util.Observable;
 import java.util.Observer;
@@ -16,22 +16,21 @@ public class Smurf extends Observable implements Observer {
 	}
 
 	public void worksWhen(Smurf... smurfs) {
-		for (Smurf s : smurfs) {
-			s.addObserver(this);
-		}
+		for (Smurf smurf : smurfs)
+			smurf.addObserver(this);
 	}
 
 	public void work() {
-		if (!working) {
-			working = true;
-			setChanged();
-			notifyObservers();
-		}
+		if (working)
+			return;
+
+		this.working = true;
+		setChanged();
+		notifyObservers();
 	}
 
 	@Override
-	public void update(Observable o, Object arg) {
-		work();
+	public void update(Observable observable, Object arg) {
+		this.work();
 	}
-
 }

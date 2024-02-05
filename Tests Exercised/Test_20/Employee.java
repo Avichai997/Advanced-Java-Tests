@@ -1,4 +1,4 @@
-package test;
+
 
 import java.util.Random;
 
@@ -7,39 +7,44 @@ public class Employee {
 	private String name;
 	private int age;
 	private double salary;
-	
+
 	public Employee(String name, int age, double salary) {
 		super();
 		this.name = name;
 		this.age = age;
 		this.salary = salary;
 	}
-	
-	private static Random r=new Random();
+
+	private static Random r = new Random();
+
 	public static Employee generate() {
-		StringBuilder sb=new StringBuilder();
-		int len=5+r.nextInt(10);
-		for(int i=0;i<len;i++)
-			sb.append((char)('a'+r.nextInt('c'+1-'a')));
-		return new Employee(sb.toString(), 30+r.nextInt(41), 10000+r.nextInt(30000));
-		
+		StringBuilder sb = new StringBuilder();
+		int len = 5 + r.nextInt(10);
+		for (int i = 0; i < len; i++)
+			sb.append((char) ('a' + r.nextInt('c' + 1 - 'a')));
+		return new Employee(sb.toString(), 30 + r.nextInt(41), 10000 + r.nextInt(30000));
 	}
-	
+
 	public String getName() {
 		return name;
 	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
+
 	public int getAge() {
 		return age;
 	}
+
 	public void setAge(int age) {
 		this.age = age;
 	}
+
 	public double getSalary() {
 		return salary;
 	}
+
 	public void setSalary(double salary) {
 		this.salary = salary;
 	}
