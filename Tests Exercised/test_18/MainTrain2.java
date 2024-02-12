@@ -5,6 +5,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import test17.Q2;
+
 public class MainTrain2 {
 
 	public static void check(Map<Character, List<String>> map, char c, int i, String word) {

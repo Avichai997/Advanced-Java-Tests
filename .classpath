@@ -3,5 +3,8 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path="Tests Exercised/Test_20"/>
 	<classpathentry kind="src" path="Tests Exercised/test_18"/>
+	<classpathentry kind="src" path="Tests Exercised/test_17"/>
+	<classpathentry excluding="Test_20/|test_18/|test_17/" kind="src" path="Tests Exercised"/>
+	<classpathentry kind="src" path="Solutions/solution_17"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

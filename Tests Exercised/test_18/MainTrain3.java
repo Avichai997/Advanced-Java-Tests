@@ -1,4 +1,3 @@
-
 public class MainTrain3 {
 
 	public static void test(String id, int cd) {
