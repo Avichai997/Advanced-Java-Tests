@@ -1,4 +1,4 @@
-package test;
+package test15;
 
 public class MainTrain3 {
 
