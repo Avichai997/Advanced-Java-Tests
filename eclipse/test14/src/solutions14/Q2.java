@@ -9,17 +9,18 @@ import java.util.Scanner;
 public class Q2 {
 
 	public static int[] getCount(List<String> words, String fileName) {
-		int[] count=new int[words.size()];
+		int[] count = new int[words.size()];
 		try {
-			Scanner s=new Scanner(new BufferedReader(new FileReader(fileName)));
-			while(s.hasNext()) {
-				String w=s.next();
-				for(int i=0;i<count.length;i++)
-					if(words.get(i).equals(w))
+			Scanner s = new Scanner(new BufferedReader(new FileReader(fileName)));
+			while (s.hasNext()) {
+				String w = s.next();
+				for (int i = 0; i < count.length; i++)
+					if (words.get(i).equals(w))
 						count[i]++;
 			}
 			s.close();
-		} catch (IOException e) {}
+		} catch (IOException e) {
+		}
 		return count;
 	}
 }
