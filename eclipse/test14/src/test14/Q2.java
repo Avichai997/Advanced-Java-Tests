@@ -12,8 +12,8 @@ public class Q2 {
 
 		try {
 			Scanner s = new Scanner(new BufferedReader(new FileReader(fileName)));
-			String word = s.next();
 			while (s.hasNext()) {
+				String word = s.next();
 				for (int i = 0; i < count.length; i++) {
 					if (words.get(i).equals(word))
 						count[i]++;
