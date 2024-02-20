@@ -1,4 +1,4 @@
-package test13;
+package solutions13;
 
 public final class ImmutableList<E> {
 	public final E head;
