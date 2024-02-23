@@ -3,7 +3,7 @@ package test11;
 import java.util.HashMap;
 
 public class EucDistProxy implements DistCalculator {
-	public static HashMap<String, Double> calcs;
+	HashMap<String, Double> calcs;
 	EuclideanDist ed;
 
 	public EucDistProxy() {
