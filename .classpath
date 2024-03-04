@@ -6,5 +6,6 @@
 	<classpathentry kind="src" path="Tests Exercised/test_17"/>
 	<classpathentry excluding="Test_20/|test_18/|test_17/" kind="src" path="Tests Exercised"/>
 	<classpathentry kind="src" path="Solutions/solution_17"/>
+	<classpathentry excluding="Tests Exercised/Test_20/|Tests Exercised/test_18/|Tests Exercised/test_17/|Tests Exercised/|Solutions/solution_17/" kind="src" path=""/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
